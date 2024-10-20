@@ -6,8 +6,22 @@
   <title>Caixa Clicável</title>
   <style>
     
-    #caixa {
+    #caixa1 {
       width: 300px;
+     height: 300px;
+       background-color: rgb(0, 0, 0);
+      color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 50px auto;
+      border-radius: 10px;
+      transition: background-color 0.1s;
+    }
+    #caixa2 {
+        width: 300px;
      height: 300px;
        background-color: rgb(0, 0, 0);
       color: blue;
@@ -24,16 +38,25 @@
 </head>
 <body>
 
-  <div id="caixa">Clique</div>
+  <div id="caixa1">Clique</div>
+
+  <div id="caixa2">Clique</div>
 
   <script>
     
-    const caixa = document.getElementById('caixa');
+    const caixa1 = document.getElementById('caixa1');
 
     caixa.addEventListener('click', () => {
       caixa.style.backgroundColor = 'pink';
       caixa.textContent = 'Luquinha viadao' ;
     });
+
+    const caixa2 = document.getElementById('caixa2');
+
+caixa.addEventListener('click', () => {
+  caixa.style.backgroundColor = 'pink';
+  caixa.textContent = 'Jao também é' ;
+});
   </script>
 
 </body>
